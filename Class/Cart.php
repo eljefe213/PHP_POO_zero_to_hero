@@ -20,4 +20,9 @@ class Cart
     {
         $this->totalPrice = $price;
     }
+
+    public function discount(float $discount): void
+    {
+        $this->totalPrice -= $this->totalPrice * ($discount / 100);
+    }
 }

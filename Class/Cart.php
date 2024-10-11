@@ -10,4 +10,9 @@ class Cart
         $this->quantity = $quantity;
         $this->totalPrice = $totalPrice;
     }
+
+    public function getTotalPrice(): float
+    {
+        return $this->totalPrice;
+    }
 }

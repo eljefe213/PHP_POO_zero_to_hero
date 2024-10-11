@@ -2,5 +2,5 @@
 
 require_once('./Class/Cart.php');
 
-$cart = new Cart();
-var_dump($cart->quantity);
+$cart = new Cart(0, 100);
+var_dump($cart);

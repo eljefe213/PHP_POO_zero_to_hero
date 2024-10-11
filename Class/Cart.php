@@ -1,3 +1,7 @@
 <?php
 
-class Cart {}
+class Cart
+{
+    public $quantity;
+    public $totalPrice;
+}

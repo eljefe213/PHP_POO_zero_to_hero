@@ -2,6 +2,6 @@
 
 class Cart
 {
-    public $quantity;
-    public $totalPrice;
+    public int $quantity = 0;
+    public float $totalPrice = 50;
 }

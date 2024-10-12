@@ -2,13 +2,11 @@
 
 class Cart
 {
-    private int $quantity;
-    private float $totalPrice;
 
-    public function __construct(int $quantity, float $totalPrice)
-    {
-        $this->quantity = $quantity;
-        $this->totalPrice = $totalPrice;
+    public function __construct(
+        private int $quantity,
+        private float $totalPrice
+    ){
     }
 
     public function getTotalPrice(): float

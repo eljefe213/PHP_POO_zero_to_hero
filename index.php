@@ -3,6 +3,9 @@
 require_once('./Class/Paypal/Payment.php');
 require_once('./Class/Stripe/Payment.php');
 
-$paymentPaypal = new class\Paypal\Payment();
-$paymentStripe = new class\Stripe\Payment();
+use Class\Paypal\Payment as PaymentPaypal;
+use Class\Stripe\Payment as PaymentStripe;
+
+$paymentPaypal = new PaymentPaypal();
+$paymentStripe = new PaymentStripe();
 var_dump($paymentPaypal, $paymentStripe);

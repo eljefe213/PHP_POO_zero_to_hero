@@ -5,4 +5,7 @@ namespace Class\Stripe;
 class Payment
 {
 
+    public function __construct()
+    {
+    }
 }

@@ -11,7 +11,9 @@ require '../vendor/autoload.php';
 
 use Class\Paypal\Payment as PaymentPaypal;
 use Class\Stripe\Payment as PaymentStripe;
+use \Colors\RandomColor;
 
 $paymentPaypal = new PaymentPaypal();
 $paymentStripe = new PaymentStripe();
-var_dump($paymentPaypal, $paymentStripe);
+
+var_dump(RandomColor::one());

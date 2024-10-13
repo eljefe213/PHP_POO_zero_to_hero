@@ -10,6 +10,7 @@ class ComposerStaticInit5c1c95567b1cc2a060b6a7f517514df7
         'C' => 
         array (
             'Colors\\' => 7,
+            'Class\\' => 6,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInit5c1c95567b1cc2a060b6a7f517514df7
         'Colors\\' => 
         array (
             0 => __DIR__ . '/..' . '/mistic100/randomcolor/src',
+        ),
+        'Class\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/class',
         ),
     );
 

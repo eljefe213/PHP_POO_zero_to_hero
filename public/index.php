@@ -1,8 +1,9 @@
 <?php
 
 use Class\CoffeeMachine;
+use Class\PremiumCoffeeMachine;
 
 require_once '../vendor/autoload.php';
 
-$coffeeMachine = new CoffeeMachine;
+$coffeeMachine = new PremiumCoffeeMachine;
 $coffeeMachine->select('espresso');

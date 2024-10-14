@@ -4,7 +4,12 @@ namespace Class;
 
 class Reservation
 {
-    const APPROVAL_PENDING = 'en attente';
-    const APPROVAL_ACCEPTED = 'accepté';
-    const APPROVAL_REJECTED = 'refusé';
+    private const APPROVAL_PENDING = 'en attente';
+    public const APPROVAL_ACCEPTED = 'accepté';
+    public const APPROVAL_REJECTED = 'refusé';
+
+    public function __construct()
+    {
+        echo Reservation::APPROVAL_PENDING;
+    }
 }

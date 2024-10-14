@@ -4,8 +4,10 @@ use Class\Reservation;
 
 require '../vendor/autoload.php';
 
-$status = 'en attente';
+// $status = 'en attente';
 
-if ($status === Reservation::APPROVAL_PENDING) {
-    echo 'en attente';
-}
+// if ($status === Reservation::APPROVAL_PENDING) {
+//     echo 'en attente !';
+// }
+
+$reservation = new Reservation();

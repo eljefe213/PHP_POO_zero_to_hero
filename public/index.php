@@ -1,6 +1,7 @@
 <?php
 
 use Class\OfficeReservation;
+use Class\Enums\OfficeStatus;
 
 require '../vendor/autoload.php';
 
@@ -10,6 +11,8 @@ require '../vendor/autoload.php';
 //     echo 'en attente !';
 // }
 
-$reservation = new OfficeReservation();
+// $reservation = new OfficeReservation();
 
-var_dump($reservation);
+// var_dump($reservation);
+
+var_dump(OfficeStatus::APPROVAL_PENDING);

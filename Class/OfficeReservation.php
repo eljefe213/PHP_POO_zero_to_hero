@@ -7,7 +7,7 @@ use Class\Enums\OfficeStatus;
 class OfficeReservation
 {
 
-    public string $status;
+    public OfficeStatus $status;
 
     public function __construct()
     {

@@ -4,12 +4,19 @@ namespace Class;
 
 class OfficeReservation
 {
-    private static int $count = 0;
 
-    public function __construct(public string $information) {}
-
-    public static function getCount(): int
+    private static ?self $_instance = null;
+    private function __construct()
     {
-        return self::$count;
+        echo 'Nouvelle instance !';
+    }
+
+    public static function getInstance(): self
+    {
+        if (is_null(self::$_instance)) {
+            self::$_instance = new self;
+        }
+
+        return self::$_instance;
     }
 }

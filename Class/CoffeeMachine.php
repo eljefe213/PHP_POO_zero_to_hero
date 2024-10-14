@@ -4,7 +4,7 @@ namespace Class;
 
 class CoffeeMachine
 {
-    public int $cups = 1;
+    protected int $cups = 1;
 
     public function select(string $selection)
     {

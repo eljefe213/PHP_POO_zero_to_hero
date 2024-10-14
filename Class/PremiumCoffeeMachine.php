@@ -2,4 +2,7 @@
 
 namespace Class;
 
-class PremiumCoffeeMachine extends CoffeeMachine {}
+class PremiumCoffeeMachine extends CoffeeMachine
+{
+    protected int $cups = 2;
+}

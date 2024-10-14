@@ -4,7 +4,12 @@ namespace Class;
 
 class CoffeeMachine
 {
-    protected int $cups = 1;
+    protected int $cups;
+
+    public function __construct(int $cups)
+    {
+        $this->cups = $cups;
+    }
 
     public function select(string $selection)
     {

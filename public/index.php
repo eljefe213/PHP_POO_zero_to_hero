@@ -1,6 +1,6 @@
 <?php
 
-use Class\Reservation;
+use Class\OfficeReservation;
 
 require '../vendor/autoload.php';
 
@@ -10,4 +10,4 @@ require '../vendor/autoload.php';
 //     echo 'en attente !';
 // }
 
-$reservation = new Reservation();
+$reservation = new OfficeReservation();

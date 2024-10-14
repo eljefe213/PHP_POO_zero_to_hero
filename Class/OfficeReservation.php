@@ -2,7 +2,7 @@
 
 namespace Class;
 
-class Reservation
+class OfficeReservation
 {
     private const APPROVAL_PENDING = 'en attente';
     public const APPROVAL_ACCEPTED = 'accepté';
@@ -10,6 +10,6 @@ class Reservation
 
     public function __construct()
     {
-        echo Reservation::APPROVAL_PENDING;
+        echo self::APPROVAL_PENDING;
     }
 }

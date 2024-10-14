@@ -11,3 +11,5 @@ require '../vendor/autoload.php';
 // }
 
 $reservation = new OfficeReservation();
+
+var_dump($reservation);

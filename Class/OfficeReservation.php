@@ -4,12 +4,14 @@ namespace Class;
 
 class OfficeReservation
 {
-    private const APPROVAL_PENDING = 'en attente';
+    public const APPROVAL_PENDING = 'en attente';
     public const APPROVAL_ACCEPTED = 'accepté';
     public const APPROVAL_REJECTED = 'refusé';
 
+    public string $status;
+
     public function __construct()
     {
-        echo self::APPROVAL_PENDING;
+        $this->status = self::APPROVAL_PENDING;
     }
 }

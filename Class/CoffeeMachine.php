@@ -16,7 +16,7 @@ class CoffeeMachine
         return $result;
     }
 
-    public function makeEspresso()
+    protected function makeEspresso()
     {
         for ($i = 0; $i < $this->cups; $i++) {
             echo 'Café Espresso n°' . $i + 1 . ' servi !';

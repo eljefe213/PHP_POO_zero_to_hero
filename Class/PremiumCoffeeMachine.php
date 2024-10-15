@@ -4,8 +4,12 @@ namespace Class;
 
 class PremiumCoffeeMachine extends CoffeeMachine
 {
-    protected int $cups = 2;
 
+    public function __construct(int $cups)
+    {
+        var_dump("Café Premium : $cups");
+        parent::__construct($cups);
+    }
     public function select(string $selection)
     {
         $result = match ($selection) {

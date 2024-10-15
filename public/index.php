@@ -5,6 +5,6 @@ use Class\PremiumCoffeeMachine;
 
 require_once '../vendor/autoload.php';
 
-$coffeeMachine = new PremiumCoffeeMachine;
+$coffeeMachine = new PremiumCoffeeMachine(2);
 
 $coffeeMachine->select('vanilla');

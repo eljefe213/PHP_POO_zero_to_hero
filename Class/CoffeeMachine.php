@@ -6,7 +6,10 @@ class CoffeeMachine
 {
     protected int $cups;
 
-
+    public function __construct(int $cups)
+    {
+        $this->cups = $cups;
+    }
 
     public function select(string $selection)
     {

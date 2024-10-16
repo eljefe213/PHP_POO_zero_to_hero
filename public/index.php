@@ -6,6 +6,5 @@ use Class\Vehicule;
 require '../vendor/autoload.php';
 
 $peugeot = new Peugeot('peugeot');
-var_dump($peugeot->rouler(), $peugeot->marque());
+var_dump( $peugeot->marque());
 
-$vehicule = new Vehicule('test');

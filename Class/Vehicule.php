@@ -11,8 +11,5 @@ abstract class Vehicule
         return 'Je roule';
     }
 
-    public function marque(): string
-    {
-        return 'Je roule en' . $this->marque . '.';
-    }
+    abstract public function marque(): string;
 }

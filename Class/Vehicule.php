@@ -2,7 +2,7 @@
 
 namespace Class;
 
-class Vehicule
+abstract class Vehicule
 {
     public function __construct(protected string $marque) {}
 

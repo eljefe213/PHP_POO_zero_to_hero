@@ -8,9 +8,4 @@ class BasicPDF  implements PDFDownloader
     {
         return 'PDF téléchargé (Basic)';
     }
-
-    public function downloadHTML(?int $size = null): string
-    {
-        return 'HTML file téléchargé (Basic)';
-    }
 }

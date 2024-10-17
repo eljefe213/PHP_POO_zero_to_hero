@@ -2,14 +2,15 @@
 
 namespace Class;
 
-class BasicPDF  implements PDFDownloader
+class BasicPDF  implements PDFDownloader, HTMLDownloader
 {
-    public function __construct()
-    {
-        echo 'OK';
-    }
     public function  downloadPDF(?int $size = null): string
     {
         return 'PDF téléchargé (Basic)';
+    }
+
+    public function downloadHTML(?int $size = null): string
+    {
+        return 'HTML file téléchargé (Basic)';
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Class;
 
-class BasicPDF  implements PDFDownloader, HTMLDownloader
+class BasicPDF  implements PDFDownloader
 {
     public function  downloadPDF(?int $size = null): string
     {

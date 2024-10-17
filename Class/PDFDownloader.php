@@ -2,7 +2,7 @@
 
 namespace Class;
 
-interface PDFDownloader
+interface PDFDownloader extends HTMLDownloader
 {
     public function  downloadPDF(?int $size = null): string;
 }

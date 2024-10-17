@@ -2,4 +2,10 @@
 
 namespace Class;
 
-class BasicPDF {}
+class BasicPDF  implements PDFDownloader
+{
+    public function  downloadPDF(): string
+    {
+        return 'PDF téléchargé (Basic)';
+    }
+}

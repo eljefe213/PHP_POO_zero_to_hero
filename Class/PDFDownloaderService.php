@@ -6,7 +6,7 @@ use Class\BasicPDF;
 
 class PDFDownloaderService
 {
-    public function downloadPDF(BasicPDF $basicPDF)
+    public function downloadPDF(PDFDownloader $basicPDF)
     {
         return $basicPDF->downloadPDF();
     }

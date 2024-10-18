@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Colors\\' => array($vendorDir . '/mistic100/randomcolor/src'),
-    'Class\\' => array($baseDir . '/class'),
+    'AppClass\\' => array($baseDir . '/class'),
 );

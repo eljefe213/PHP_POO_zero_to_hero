@@ -6,8 +6,8 @@ use Class\BasicPDF;
 
 class PDFDownloaderService
 {
-    public function downloadPDF(PDFDownloader $basicPDF)
+    public function downloadPDF(PDFDownloader $PDFDownloader)
     {
-        return $basicPDF->downloadPDF();
+        return $PDFDownloader->downloadPDF();
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Class;
+namespace AppClass;
 
 class BasicPDF  implements PDFDownloader
 {

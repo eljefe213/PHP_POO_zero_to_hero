@@ -1,8 +1,8 @@
 <?php
 
-use Class\BasicPDF;
-use Class\PDFDownloaderService;
-use Class\PremiumPDF;
+use AppClass\BasicPDF;
+use AppClass\PDFDownloaderService;
+use AppClass\PremiumPDF;
 
 require '../vendor/autoload.php';
 

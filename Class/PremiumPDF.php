@@ -1,7 +1,7 @@
 <?php 
 
 
-namespace Class;
+namespace AppClass;
 
 class PremiumPDF implements PDFDownloader
 {

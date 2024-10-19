@@ -5,5 +5,5 @@ namespace AppClass;
 
 class ChildClass extends ParentClass
 {
-    protected string $name = "ChildClass";  
+    protected static string $name = "ChildClass";  
 }

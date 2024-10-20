@@ -11,4 +11,9 @@ class ParentClass
         // return $this->name;
         return static::$name;
     }
+
+     public function factory()
+     {
+        return new static();
+     }
 }

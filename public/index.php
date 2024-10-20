@@ -4,9 +4,9 @@ use AppClass\ChildClass;
 require '../vendor/autoload.php';
 
 
-// $parent = new ParentClass();
-// $child = new ChildClass();
+$parent = new ParentClass();
+$child = new ChildClass();
 
-// var_dump($parent->getName(), $child->getName());
+var_dump($parent->getName(), $child->getName());
 
-var_dump( ParentClass::class, ChildClass::class );
+// var_dump( ParentClass::class, ChildClass::class );

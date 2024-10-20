@@ -9,6 +9,6 @@ class ParentClass
     public static function getName(): string
     {
         // return $this->name;
-        return self::$name;
+        return static::$name;
     }
 }

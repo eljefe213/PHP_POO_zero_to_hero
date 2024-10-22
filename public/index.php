@@ -5,10 +5,10 @@ require '../vendor/autoload.php';
 
 $espresso = new AppClass\EspressoMachine();
 $irishCoffee = new AppClass\IrishCoffeeMachine();
+$multiCoffee = new AppClass\MultiCoffeeMachine();
 
 var_dump(
-    $espresso->makeEspresso(),
-    $irishCoffee->makeIrishCoffee(),
-    $espresso->makeCoffee(),
-    $irishCoffee->makeCoffee()
+    $multiCoffee->makeEspresso(),
+    $multiCoffee->makeCoffee(),
+    $multiCoffee->makeIrishCoffee()
 );

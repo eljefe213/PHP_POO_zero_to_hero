@@ -1,6 +1,6 @@
 <?php 
 
-namespace AppClass;
+namespace AppClass\Contracts;
 
 interface EspressoCoffeeInterface
 {

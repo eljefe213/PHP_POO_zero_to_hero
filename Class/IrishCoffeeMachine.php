@@ -2,7 +2,9 @@
 
 namespace AppClass;
 
-class IrishCoffeeMachine extends CoffeeMaker
+use AppClass\Contracts\IrishCoffeeInterface;
+
+class IrishCoffeeMachine extends CoffeeMaker implements IrishCoffeeInterface
 {
     public function makeIrishCoffee(): string
     {

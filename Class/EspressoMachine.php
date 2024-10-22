@@ -2,7 +2,9 @@
 
 namespace AppClass;
 
-class EspressoMachine extends CoffeeMaker
+use AppClass\Contracts\EspressoCoffeeInterface;
+
+class EspressoMachine extends CoffeeMaker implements EspressoCoffeeInterface
 {
     public function makeEspresso(): string
     {

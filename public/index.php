@@ -8,7 +8,8 @@ $irishCoffee = new AppClass\IrishCoffeeMachine();
 $multiCoffee = new AppClass\MultiCoffeeMachine();
 
 var_dump(
-    $multiCoffee->makeEspresso(),
-    $multiCoffee->makeCoffee(),
-    $multiCoffee->makeIrishCoffee()
+    $espresso->makeEspresso(),
+    $espresso->makeCoffee(),
+    $irishCoffee->makeIrishCoffee(),
+    $irishCoffee->makeCoffee(),
 );

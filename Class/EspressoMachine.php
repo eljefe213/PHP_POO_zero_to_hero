@@ -2,13 +2,10 @@
 
 namespace AppClass;
 
-use AppClass\Contracts\EspressoCoffeeInterface;
+use AppClass\Traits\EspressoCoffeeTrait;
 
-class EspressoMachine extends CoffeeMaker implements EspressoCoffeeInterface
+class EspressoMachine extends CoffeeMaker
 {
-    public function makeEspresso(): string
-    {
-        return static::class . ': is Making espresso...';
-    }
+    use EspressoCoffeeTrait;
 }
 

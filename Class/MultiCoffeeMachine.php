@@ -3,15 +3,11 @@
 namespace AppClass;
 
 use AppClass\CoffeeMaker;
-use AppClass\Contracts\EspressoCoffeeInterface;
-use AppClass\Contracts\IrishCoffeeInterface;
+use AppClass\Traits\IrishCoffeeTrait;
 
 class MultiCoffeeMachine extends CoffeeMaker 
 {
-    public function makeIrishCoffee(): string
-    {
-        return static::class . ': is Making Irish coffee...';
-    }
+    use IrishCoffeeTrait;
 
     public function makeEspresso(): string
     {

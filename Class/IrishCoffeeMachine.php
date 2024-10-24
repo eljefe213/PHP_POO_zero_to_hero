@@ -2,13 +2,10 @@
 
 namespace AppClass;
 
-use AppClass\Contracts\IrishCoffeeInterface;
+use AppClass\Traits\IrishCoffeeTrait;
 
-class IrishCoffeeMachine extends CoffeeMaker implements IrishCoffeeInterface
+class IrishCoffeeMachine extends CoffeeMaker 
 {
-    public function makeIrishCoffee(): string
-    {
-        return static::class . ': is Making Irish coffee...';
-    }
+   use IrishCoffeeTrait;
 }
 

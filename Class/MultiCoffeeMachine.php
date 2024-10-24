@@ -6,7 +6,7 @@ use AppClass\CoffeeMaker;
 use AppClass\Contracts\EspressoCoffeeInterface;
 use AppClass\Contracts\IrishCoffeeInterface;
 
-class MultiCoffeeMachine extends CoffeeMaker implements EspressoCoffeeInterface, IrishCoffeeInterface
+class MultiCoffeeMachine extends CoffeeMaker 
 {
     public function makeIrishCoffee(): string
     {

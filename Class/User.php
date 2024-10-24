@@ -4,8 +4,8 @@ namespace AppClass;
 
 class User
 {
-    public function getName()
+    public function authenticated()
     {
-        return 'User';
+        return 'authenticated';
     }
 }

@@ -2,6 +2,8 @@
 
 namespace AppClass;
 
+use AppClass\Exceptions\UserNotVerifiedException;
+
 class Login 
 {
     public function __construct(protected User $user) {}
@@ -9,7 +11,7 @@ class Login
     public function login() 
     {
         if (!$this->user->isVerified()) {
-            throw new \Exception('User not verified');
+            throw new UserNotVerifiedException('User not verified');
         }
 
         return true;

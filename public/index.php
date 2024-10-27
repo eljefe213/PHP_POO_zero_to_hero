@@ -2,10 +2,15 @@
 
 use AppClass\User;
 use AppClass\Login;
+use AppClass\Exceptions\UserNotVerifiedException;
 
 require '../vendor/autoload.php';
 
 $user = new User('admin', 'password');
 $login = new Login($user);
 
-var_dump($login->login());
+try {
+    $login->login();
+} catch (UserNotVerifiedException $e) {
+    echo $e->getMessage();
+}

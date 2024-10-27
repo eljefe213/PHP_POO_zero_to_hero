@@ -11,7 +11,7 @@ class Login
     public function login() 
     {
         if (!$this->user->isVerified()) {
-            throw new UserNotVerifiedException('User not verified');
+            throw new UserNotVerifiedException();
         }
 
         return true;

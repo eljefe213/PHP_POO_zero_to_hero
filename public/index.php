@@ -14,6 +14,4 @@ $router->register('/contact', function () {
     return 'Contact page';
 });
 
-echo '<pre>';
-var_dump($router);
-echo '</pre>';
+$router->resolve($_SERVER['REQUEST_URI']);

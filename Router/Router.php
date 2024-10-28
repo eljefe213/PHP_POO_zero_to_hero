@@ -9,4 +9,14 @@ class Router
     {
         $this->routes[$path] = $action;
     }
+
+    public function resolve(string $uri): void
+    {
+        $path = explode('?', $uri)[0];
+        $action = $this->routes[$path] ?? null;
+
+        if (!is_callable($action)) {
+            throw new \Exception('Route not found');
+        }
+    }
 }

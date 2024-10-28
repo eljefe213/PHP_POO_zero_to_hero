@@ -14,4 +14,6 @@ try {
     $login->login();
 } catch (\Exception $e) {
     echo $e->getMessage() . ' on the line ' . $e->getLine() . ' in the file ' . $e->getFile();
+} finally {
+    echo 'Done';
 }

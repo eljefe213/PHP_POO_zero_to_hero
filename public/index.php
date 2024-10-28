@@ -1,5 +1,6 @@
 <?php
 
+use Exceptions\RouteNotFoundException;
 use Router\Router;
 
 require '../vendor/autoload.php';
@@ -14,4 +15,8 @@ $router->register('/contact', function () {
     return 'Contact page';
 });
 
-$router->resolve($_SERVER['REQUEST_URI']);
+try {
+    echo $router->resolve($_SERVER['REQUEST_URI']);
+} catch (RouteNotFoundException $e) {
+    echo $e->getMessage();
+}

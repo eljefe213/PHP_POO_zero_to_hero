@@ -12,8 +12,6 @@ $login = new Login($user);
 
 try {
     $login->login();
-} catch (UserNotVerifiedException $e) {
-    echo $e->getMessage() . 'sur la ligne ' . $e->getLine() . ' du fichier ' . $e->getFile();
-} catch (UserIsBannedException $e) {
-    echo $e->getMessage() . 'on the line ' . $e->getLine() . ' in the file ' . $e->getFile();
+} catch (\Exception $e) {
+    echo $e->getMessage() . ' on the line ' . $e->getLine() . ' in the file ' . $e->getFile();
 }

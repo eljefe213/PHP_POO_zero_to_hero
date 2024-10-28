@@ -2,14 +2,13 @@
 
 use Exceptions\RouteNotFoundException;
 use Router\Router;
+use Controllers\HomeController;
 
 require '../vendor/autoload.php';
 
 $router = new Router();
 
-$router->register('/', function () {
-    return 'Home page';
-});
+$router->register('/', ['Controllers\HomeController', 'index']);
 
 $router->register('/contact', function () {
     return 'Contact page';

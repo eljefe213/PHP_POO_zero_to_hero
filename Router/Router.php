@@ -2,6 +2,8 @@
 
 namespace Router;
 
+use Exceptions\RouteNotFoundException;
+
 class Router
 {
     private array $routes = [];
@@ -10,13 +12,15 @@ class Router
         $this->routes[$path] = $action;
     }
 
-    public function resolve(string $uri): void
+    public function resolve(string $uri): mixed
     {
         $path = explode('?', $uri)[0];
         $action = $this->routes[$path] ?? null;
 
         if (!is_callable($action)) {
-            throw new \Exception('Route not found');
+            throw new RouteNotFoundException('Route not found');
         }
+
+        return $action();
     }
 }

@@ -4,6 +4,7 @@ namespace AppClass;
 
 use AppClass\Exceptions\UserNotVerifiedException;
 use AppClass\Exceptions\UserIsBannedException;
+use AppClass\Exceptions\UserException;
 
 class Login
 {
@@ -12,12 +13,12 @@ class Login
     public function login()
     {
         if (!$this->user->isVerified()) {
-            throw new UserNotVerifiedException();
+            throw UserException::notVerified();
         }
 
-        if ($this->user->isBanned()) {
-            throw new UserIsBannedException();
-        }
+        // if ($this->user->isBanned()) {
+        //     throw new UserIsBannedException();
+        // }
 
         return true;
     }

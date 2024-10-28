@@ -17,6 +17,7 @@ class ComposerStaticInit5c1c95567b1cc2a060b6a7f517514df7
         ),
         'C' => 
         array (
+            'Controllers\\' => 12,
             'Colors\\' => 7,
         ),
     );
@@ -29,6 +30,10 @@ class ComposerStaticInit5c1c95567b1cc2a060b6a7f517514df7
         'Exceptions\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Exceptions',
+        ),
+        'Controllers\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Controllers',
         ),
         'Colors\\' => 
         array (

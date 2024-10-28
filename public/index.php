@@ -12,5 +12,5 @@ $login = new Login($user);
 try {
     $login->login();
 } catch (UserNotVerifiedException $e) {
-    echo $e->getMessage();
+    echo $e->getMessage() . 'sur la ligne ' . $e->getLine();
 }

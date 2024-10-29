@@ -19,4 +19,9 @@ class Renderer
     {
         return new static($viewPath);
     }
+
+    public function __toString()
+    {
+        return $this->view();
+    }
 }

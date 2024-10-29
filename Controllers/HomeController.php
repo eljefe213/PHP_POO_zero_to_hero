@@ -8,7 +8,6 @@ class HomeController
 {
     public function index()
     {
-        $renderer = new Renderer('home/index');
-        return $renderer->view();
+        return Renderer::make('home/index');
     }
 }

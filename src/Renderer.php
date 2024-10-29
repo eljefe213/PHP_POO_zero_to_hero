@@ -14,4 +14,9 @@ class Renderer
 
         return ob_get_clean();
     }
+
+    public static function make(string $viewPath): static
+    {
+        return new static($viewPath);
+    }
 }

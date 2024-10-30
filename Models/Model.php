@@ -7,6 +7,7 @@ use Source\Constant;
 class Model
 {
     protected static \PDO $pdo;
+    protected string $table;
 
     public function __construct()
     {
@@ -25,6 +26,8 @@ class Model
             echo $e->getMessage();
             die();
         }
+
+        $this->table = strtolower(explode('\\', get_class($this))[1]) . 's';
     }
 
     public function all(): array

@@ -9,6 +9,9 @@
 
 <body>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rem consequuntur iure explicabo aliquid quas, aut dicta? Quidem, quisquam dolorum? Accusantium mollitia, explicabo sed nihil fuga itaque voluptatum quos modi perferendis, rerum at reiciendis pariatur atque excepturi et inventore, facilis soluta nam magni. Sequi consequuntur modi natus alias quod illum labore cum ullam deserunt praesentium!</p>
+    <?php foreach ($users as $user): ?>
+        <li><?= $user->email ?></li>
+    <?php endforeach ?>
 </body>
 
 </html>

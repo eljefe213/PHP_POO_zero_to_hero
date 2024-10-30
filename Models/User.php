@@ -3,10 +3,12 @@
 namespace Models;
 
 use Source\Constant;
+use stdClass;
 
 class User
 {
     private static \PDO $pdo;
+    private string $table = 'users';
 
     public function __construct()
     {
@@ -27,7 +29,14 @@ class User
         }
     }
 
-    public function getPDO(): \PDO
+    public function all(): array
+    {
+        $statement = $this->getPDO()->query("SELECT * FROM {$this->table}");
+
+        return $statement->fetchAll();
+    }
+
+    private function getPDO(): \PDO
     {
         return static::$pdo;
     }

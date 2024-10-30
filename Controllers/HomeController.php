@@ -11,11 +11,9 @@ class HomeController
     {
 
         $userModel = new User();
-        $statement = $userModel->getPDO()->query('SELECT * FROM users');
+        $users = $userModel->all();
 
-        foreach ($statement->fetchAll() as $user) {
-            var_dump($user);
-        }
+        var_dump($users);
 
         return Renderer::make('home/index');
     }

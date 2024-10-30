@@ -12,9 +12,8 @@ class User
     {
         try {
             static::$pdo = new \PDO(
-                '
-            mysql:dbname=' . Constant::DB_NAME . ';
-            host=' . Constant::DB_HOST,
+                'mysql:dbname=' . Constant::DB_NAME . ';host=' .
+                    Constant::DB_HOST,
                 Constant::DB_USERNAME,
                 Constant::DB_PASSWORD,
                 [

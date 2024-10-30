@@ -12,6 +12,11 @@ class Router
         $this->routes[$path] = $action;
     }
 
+    public function getRoutes(): array
+    {
+        return $this->routes;
+    }
+
     public function resolve(string $uri): mixed
     {
         $path = explode('?', $uri)[0];
